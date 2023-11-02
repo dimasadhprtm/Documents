@@ -1,0 +1,319 @@
+@font-face {
+  font-family: "ptsans";
+  src: url("ptsans.ttf") format("truetype");
+}
+
+body {
+  font-family: "ptsans", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-top: 70px; /* Sesuaikan dengan tinggi navbar */
+}
+
+header {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.menu-toggle {
+  display: none; /* Sembunyikan tombol hamburger pada tampilan desktop */
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.login-button,
+.register-button {
+  margin-right: 10px;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.login-button button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button button:hover {
+  background-color: #555;
+}
+
+.register-button button {
+  background-color: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.register-button button:hover {
+  background-color: #d68910;
+}
+
+.hero {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: #f0f0f0;
+  color: #ffffff;
+  background-image: url(./img/gogreen-content3.avif);
+  background-size: cover;
+  text-align: center;
+  padding: 50px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2dfe0d;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+
+#about,
+#activities,
+#contact {
+  padding: 10px 0;
+}
+
+.about-container {
+  margin: 0 auto;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.activity {
+  margin-top: 10px;
+}
+
+.activity img {
+  display: grid;
+  place-items: center;
+  max-width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label,
+form textarea,
+form input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.gender {
+  display: flex;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: square;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Menampilkan tombol hamburger pada tampilan responsif */
+@media only screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin-right: 20px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #333;
+  }
+
+  nav ul li {
+    margin: 0;
+    text-align: center;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+}
+
+/* Media queries untuk laptop */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 15px;
+  }
+
+  nav ul li {
+    margin-right: 15px;
+  }
+}
+
+/* Media queries untuk tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+    font-size: ;
+  }
+}
+
+/* Media queries untuk handphone */
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin-right: 8px;
+  }
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown ul li {
+  margin: 10px 0;
+}
+
+/* Menampilkan dropdown saat class active ditambahkan */
+.dropdown.active {
+  display: block;
+}

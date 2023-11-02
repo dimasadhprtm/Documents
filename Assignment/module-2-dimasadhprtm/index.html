@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="style.js"></script>
+    <title>Green Earth</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/gogreen-logo.jpeg" alt="Green Earth Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#activities">Kegiatan</a></li>
+          <li><a href="#contact">Hubungi Kami</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+          <i data-feather="menu">menu</i>
+          <!-- Ikon menu dari Feather Icons -->
+        </div>
+        <div class="dropdown" id="dropdown-menu">
+          <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#activities">Kegiatan</a></li>
+            <li><a href="#contact">Hubungi Kami</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="buttons">
+        <div class="login-button">
+          <button>Login</button>
+        </div>
+        <div class="register-button">
+          <button>Sign Up</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <h1>Selamat Datang di Green Earth</h1>
+      <p>
+        Bergabunglah bersama kami dalam menjaga kebersihan dan keberlanjutan
+        lingkungan!
+      </p>
+      <a href="#activities" class="cta-button">Lihat Kegiatan</a>
+    </section>
+
+    <section id="about">
+      <div class="about-container">
+        <h2>Tentang Kami</h2>
+        <p>
+          Green Earth adalah komunitas yang peduli terhadap lingkungan dan
+          berkomitmen untuk mengurangi sampah serta menjaga kebersihan alam.
+          Bergabunglah dengan kami dan berkontribusi untuk membuat bumi kita
+          lebih hijau dan bersih.
+        </p>
+      </div>
+    </section>
+
+    <section id="activities">
+      <h2>Kegiatan Kami</h2>
+      <div class="activity">
+        <ul>
+          <li>
+            Kami aktif dalam kegiatan daur ulang untuk mengurangi jumlah sampah
+            yang masuk ke tempat pembuangan akhir.
+          </li>
+          <li>Kami bekerja sama dengan warga untuk memilah sampah.</li>
+          <li>Kami membantu dunia agar lebih indah.</li>
+        </ul>
+        <figure>
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./img/image-2-768px.jpg"
+            />
+            <img src="./img/image-2.jpg" alt="Membersihkan Sampah" />
+          </picture>
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./img/image-1-768px.jpg"
+            />
+            <img src="./img/image-1.jpg" alt="Membersihkan Sampah" />
+          </picture>
+        </figure>
+    </section>
+
+    <section class="contact">
+      <div class="contact-container">
+        <div class="left">
+          <div class="left-container"></div>
+          <h2>Hubungi Kami</h2>
+          <p>
+            Jika Anda memiliki pertanyaan atau ingin bergabung dengan kami,
+            silakan hubungi kami melalui formulir di bawah ini:
+          </p>
+        </div>
+
+        <form>
+          <label for="name">Nama:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Dementor"
+            required
+          />
+          <div class="gender">
+            <label for="gender">Jenis Kelamin :</label>
+            <input type="radio" name="gender" value="male" />
+            <label for="gender">Pria</label><br />
+            <input type="radio" name="gender" value="female" />
+            <label for="gender">Wanita</label><br />
+          </div>
+          <div>
+            <label for="dob">Tanggal Lahir :</label>
+            <input type="date" id="dob" name="trip-start" value="1990-01-01" />
+          </div>
+
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              id="subscribeCheckbox"
+              name="subscribe"
+              value="yes"
+            />
+            <label for="subscribeCheckbox">Berlangganan Newsletter</label>
+          </div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="dementor@hogwart.com"
+            required
+          />
+
+          <label for="message">Pesan:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Tulis Pesan"
+            required
+          ></textarea>
+
+          <button type="submit">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Green Earth - Dimas Adhi Pratama</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </body>
+</html>
